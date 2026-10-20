@@ -1,0 +1,17 @@
+# Pastas de desenvolvimento e legado
+legado/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Dados temporarios e saidas locais
+data/
+output/
+*.tif
+*.tiff
+*.zip
+
+# Ambiente virtual
+.venv/
+venv/
+env/
