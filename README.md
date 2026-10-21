@@ -8,6 +8,13 @@ O projeto disponibiliza fluxos reprodutiveis para elevar a resolucao espacial da
 
 Diferente de abordagens proprietarias baseadas em servicos fechados, a solucao emprega pesos abertos e arquiteturas publicas auditaveis desenvolvidas sob coordenacao da Agencia Espacial Europeia (ESA) e disponibilizadas publicamente sob a licenca Apache 2.0.
 
+<p align="center">
+  <img src="demo/comparativo_10m_vs_2_5m.png" alt="Demonstracao de Super-Resolucao Sentinel-2 (10m vs 2.5m)" width="850">
+</p>
+<p align="center">
+  <em>Demonstracao visual: Comparativo entre a resolucao nativa do Sentinel-2 (10m/px) e a super-resolucao do modelo LDSR-S2 da ESA OpenSR (2.5m/px) em composicoes RGB e Falsa-Cor NIR.</em>
+</p>
+
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1f2937', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#374151', 'lineColor': '#4b5563', 'secondaryColor': '#111827', 'tertiaryColor': '#1f2937' }}}%%
 flowchart TD
@@ -43,12 +50,16 @@ flowchart TD
 O repositorio esta estruturado em dois cadernos executaveis independentes no Google Colab:
 
 ### Modulo 1: Inspecao e Exploracao Pontual
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/samuel-c-santos/opensr-sentinel-pipeline/blob/main/OpenSR_Exploracao_Inferencia_Colab.ipynb)
+
 * Arquivo: `OpenSR_Exploracao_Inferencia_Colab.ipynb`
 * Finalidade: Inspecao rapida e validacao visual pontual.
 * Metodo de entrada: Par de coordenadas geograficas (longitude e latitude) e definicao do raio de abrangencia.
 * Saida: Comparativo visual em matriz 2x2 com composicoes coloridas RGB e falsa-cor NIR, alem do GeoTIFF georreferenciado local.
 
 ### Modulo 2: Producao por Poligono de Area de Interesse
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/samuel-c-santos/opensr-sentinel-pipeline/blob/main/OpenSR_Producao_Poligono_Colab.ipynb)
+
 * Arquivo: `OpenSR_Producao_Poligono_Colab.ipynb`
 * Finalidade: Processamento operacional de grandes extensoes territoriais delimitadas por vetores.
 * Metodo de entrada: Arquivo compactado Shapefile (.zip) ou poligono em coordenadas geograficas.
