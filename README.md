@@ -53,7 +53,7 @@ O repositorio esta estruturado em dois cadernos executaveis independentes no Goo
 * Finalidade: Processamento operacional de grandes extensoes territoriais delimitadas por vetores.
 * Metodo de entrada: Arquivo compactado Shapefile (.zip) ou poligono em coordenadas geograficas.
 * Mecanismo de processamento: Janelas deslizantes (tiling) de 128x128 pixels com sobreposicao de bordas e ponderacao por funcao Hanning, prevenindo esgotamento de memoria VRAM e suprimindo descontinuidades na montagem do mosaico.
-* Saida: Exportacao automatizada do GeoTIFF final super-resolvido em 2.5 metros por pixel com projecao espacial mantida diretamente no Google Drive do usuario.
+* Saida: Exportacao automatizada do GeoTIFF final com super-resolucao em 2.5 metros por pixel com projecao espacial mantida diretamente no Google Drive do usuario.
 
 ## 3. Especificacoes Tecnicas do Modelo
 
